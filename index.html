@@ -842,28 +842,46 @@
             </div>
           </div>
 
-          <!-- PROJECT 3: Elmo7taref Restaurant (مطعم المحترف بشبرا) -->
-          <div class="glass-panel rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-800 hover:border-orange-500/40 transition-all p-4 sm:p-8 lg:p-10 card-3d relative">
+          <!-- PROJECT: Elmo7taref Restaurant (مطعم المحترف بشبرا - نموذج تجريبي تفاعلي) -->
+          <div class="glass-panel rounded-2xl sm:rounded-3xl overflow-hidden border border-amber-500/30 hover:border-orange-500/50 transition-all p-4 sm:p-8 lg:p-10 card-3d relative">
+            
+            <!-- Subtle Demo Ribbon / Watermark Glow -->
+            <div class="absolute -top-16 -right-16 w-60 h-60 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
               
               <!-- Info Column -->
               <div class="lg:col-span-6 space-y-4 sm:space-y-6">
+                
+                <!-- Category + Explicit DEMO Badge -->
                 <div class="flex flex-wrap items-center gap-2">
+                  <span class="px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping shrink-0"></span>
+                    <i class="fa-solid fa-flask-vial text-amber-400"></i>
+                    <span data-i18n="p3DemoBadge">نموذج تجريبي تفاعلي (Interactive Demo)</span>
+                  </span>
                   <span class="px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-bold bg-orange-500/15 text-orange-400 border border-orange-500/30">
                     <i class="fa-solid fa-fire-burner ml-1"></i> <span data-i18n="p3Category">منصة مطاعم ومأكولات سريعة (F&B & Cloud Menu)</span>
                   </span>
-                  <span class="px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                    <i class="fa-solid fa-circle-check ml-1"></i> <span data-i18n="liveNow">لايف ويعمل الآن</span>
-                  </span>
                 </div>
 
+                <!-- Title -->
                 <h3 class="text-xl sm:text-3xl font-black text-white flex flex-wrap items-center gap-2 sm:gap-3">
                   <span>El Mohterf Restaurant</span>
                   <span class="text-xs sm:text-sm font-normal text-slate-400">| مطعم المحترف بشبرا</span>
+                  <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">DEMO CONCEPT</span>
                 </h3>
 
+                <!-- Notice banner explaining it is a demo for clients -->
+                <div class="p-3 sm:p-3.5 rounded-xl bg-amber-950/20 border border-amber-500/30 text-amber-200/90 text-xs flex items-start gap-2.5">
+                  <i class="fa-solid fa-circle-info text-amber-400 text-sm mt-0.5 shrink-0"></i>
+                  <p class="leading-relaxed" data-i18n="p3DemoNotice">
+                    <strong>مشروع تجريبي تفاعلي:</strong> نموذج حي قمنا ببنائه لنوضح لعملائنا وأصحاب المطاعم كيف نبتكر منصات طعام سريعة وسحابية، تشمل المنيو الرقمي المصور، سلة طلبات الواتساب اللحظية، وتصفح المنيو الورقي لترى قوة العمل وجودته قبل التعاقد معنا.
+                  </p>
+                </div>
+
                 <p class="text-slate-300 text-xs sm:text-base leading-relaxed" data-i18n="p3Desc">
-                  الموقع الرسمي لأشهر علامة كبدة وسجق ومشويات في شبرا (دوران شبرا أمام محطة مترو روض الفرج). منصة رقمية متطورة تم بناؤها لتتحمل ضغط آلاف الزوار، تشمل منيو رقمي تفاعلي بالصور والأسعار، مستعرض للمنيو الورقي الأصلي (10 صفحات بدقة فائقة)، سلة طلبات ذكية متصلة فورياً بالواتساب، أرقام الخط الساخن، وخرائط الفروع ومواعيد العمل.
+                  منصة رقمية متكاملة تم تطويرها كـ Concept حي لاستعراض إمكانياتنا في هندسة مواقع المطاعم وسلاسل الأغذية. تشمل منيو رقمي تفاعلي بالصور والأسعار، مستعرض للمنيو الورقي الأصلي (10 صفحات بدقة فائقة)، سلة طلبات ذكية متصلة فورياً بالواتساب، أرقام الخط الساخن، وخرائط الفروع ومواعيد العمل.
                 </p>
 
                 <!-- Features Bullets -->
@@ -896,11 +914,11 @@
 
                 <!-- Action Links -->
                 <div class="pt-3 sm:pt-4 flex flex-col sm:flex-row flex-wrap gap-2.5 sm:gap-3">
-                  <a href="https://elmo7taref.vercel.app/" target="_blank" onclick="playClickSound()" class="w-full sm:w-auto px-5 sm:px-6 py-3 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white shadow-lg shadow-orange-500/20 transition flex items-center justify-center gap-2 active:scale-95">
-                    <span data-i18n="viewLiveSite">زيارة الموقع المباشر</span>
+                  <a href="https://elmo7taref.vercel.app/" target="_blank" onclick="playClickSound()" class="w-full sm:w-auto px-5 sm:px-6 py-3 rounded-xl font-black text-xs sm:text-sm bg-gradient-to-r from-orange-600 via-amber-500 to-orange-500 hover:from-orange-500 hover:to-amber-400 text-slate-950 shadow-lg shadow-orange-500/20 transition flex items-center justify-center gap-2 active:scale-95">
+                    <span data-i18n="viewLiveDemoRestaurant">تصفح منيو المطعم التجريبي</span>
                     <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                   </a>
-                  <button onclick="openPreviewModal('https://elmo7taref.vercel.app/', 'مطعم المحترف بشبرا (أصل الكبدة والسجق والمشويات)')" class="w-full sm:w-auto px-4 py-3 rounded-xl font-bold text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 transition flex items-center justify-center gap-2 active:scale-95">
+                  <button onclick="openPreviewModal('https://elmo7taref.vercel.app/', 'مطعم المحترف بشبرا (نموذج تجريبي تفاعلي)')" class="w-full sm:w-auto px-4 py-3 rounded-xl font-bold text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 transition flex items-center justify-center gap-2 active:scale-95">
                     <i class="fa-solid fa-expand text-xs"></i>
                     <span data-i18n="quickPreviewModal">معاينة داخلية</span>
                   </button>
@@ -913,15 +931,16 @@
 
               <!-- Visual Preview Frame -->
               <div class="lg:col-span-6">
-                <div class="relative group rounded-xl sm:rounded-2xl overflow-hidden border border-slate-700 bg-slate-950 shadow-2xl">
+                <div class="relative group rounded-xl sm:rounded-2xl overflow-hidden border border-amber-500/40 bg-slate-950 shadow-2xl">
                   <div class="bg-slate-800/90 px-3 sm:px-4 py-2 sm:py-2.5 flex items-center justify-between border-b border-slate-700">
                     <div class="flex items-center gap-1.5">
                       <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-rose-500 inline-block"></span>
                       <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-amber-500 inline-block"></span>
                       <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-500 inline-block"></span>
                     </div>
-                    <div class="text-[10px] sm:text-[11px] font-mono text-slate-400 bg-slate-900 px-2 sm:px-3 py-0.5 sm:py-1 rounded-md border border-slate-800 truncate max-w-[160px] sm:max-w-none">
-                      elmo7taref.vercel.app
+                    <div class="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-mono text-slate-400 bg-slate-900 px-2 sm:px-3 py-0.5 sm:py-1 rounded-md border border-slate-800 truncate max-w-[170px] sm:max-w-none">
+                      <span class="text-[9px] font-black uppercase text-amber-400 bg-amber-500/20 px-1 py-0.2 rounded">DEMO</span>
+                      <span class="truncate">elmo7taref.vercel.app</span>
                     </div>
                     <i class="fa-solid fa-lock text-emerald-400 text-xs"></i>
                   </div>
@@ -929,11 +948,11 @@
                     <img src="assets/elmo7taref-full-preview.jpg" alt="Elmo7taref Restaurant Preview" class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105" onerror="this.src='assets/elmo7taref-hero.jpg'" />
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
                     <div class="absolute bottom-2.5 right-2.5 left-2.5 sm:bottom-4 sm:right-4 sm:left-4 flex items-center justify-between gap-2">
-                      <span class="px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-bold bg-slate-900/90 text-orange-400 border border-orange-500/30 truncate max-w-[170px] sm:max-w-none">
-                        <i class="fa-solid fa-fire text-orange-400 ml-1"></i> Authentic Egyptian F&B UX
+                      <span class="px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-bold bg-slate-900/90 text-amber-300 border border-amber-500/30 truncate max-w-[170px] sm:max-w-none">
+                        <i class="fa-solid fa-flask-vial text-amber-400 ml-1"></i> Interactive Restaurant Demo
                       </span>
-                      <a href="https://elmo7taref.vercel.app/" target="_blank" class="px-2.5 py-1 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold bg-orange-500 text-white hover:bg-orange-400 transition shrink-0">
-                        تصفح لايف ↗
+                      <a href="https://elmo7taref.vercel.app/" target="_blank" class="px-2.5 py-1 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold bg-amber-500 text-slate-950 font-black hover:bg-amber-400 transition shrink-0">
+                        تصفح الديمو ↗
                       </a>
                     </div>
                   </div>
@@ -1689,13 +1708,16 @@
         pVarandaFeat3: "معرض صور وتراس للمذاكرة والشغل",
         pVarandaFeat4: "بدون حجز مسبق مع ربط لوكيشن شبرا",
         orderWorkspaceSite: "اطلب موقعاً لمساحة عملك",
-        // Project 3: Elmo7taref Restaurant
+        // Project 3: Elmo7taref Restaurant (Demo Concept)
         p3Category: "منصة مطاعم ومأكولات سريعة (F&B & Cloud Menu)",
-        p3Desc: "الموقع الرسمي لأشهر علامة كبدة وسجق ومشويات في شبرا (دوران شبرا أمام محطة مترو روض الفرج). منصة رقمية متطورة تم بناؤها لتتحمل ضغط آلاف الزوار، تشمل منيو رقمي تفاعلي بالصور والأسعار، مستعرض للمنيو الورقي الأصلي (10 صفحات بدقة فائقة)، سلة طلبات ذكية متصلة فورياً بالواتساب، أرقام الخط الساخن، وخرائط الفروع ومواعيد العمل.",
+        p3DemoBadge: "نموذج تجريبي تفاعلي (Interactive Demo)",
+        p3DemoNotice: "مشروع تجريبي تفاعلي: نموذج حي قمنا ببنائه لنوضح لعملائنا وأصحاب المطاعم كيف نبتكر منصات طعام سريعة وسحابية، تشمل المنيو الرقمي المصور، سلة طلبات الواتساب اللحظية، وتصفح المنيو الورقي لترى قوة العمل وجودته قبل التعاقد معنا.",
+        p3Desc: "منصة رقمية متكاملة تم تطويرها كـ Concept حي لاستعراض إمكانياتنا في هندسة مواقع المطاعم وسلاسل الأغذية. تشمل منيو رقمي تفاعلي بالصور والأسعار، مستعرض للمنيو الورقي الأصلي (10 صفحات بدقة فائقة)، سلة طلبات ذكية متصلة فورياً بالواتساب، أرقام الخط الساخن، وخرائط الفروع ومواعيد العمل.",
         p3Feat1: "منيو رقمي تفاعلي مع فلترة الأصناف",
         p3Feat2: "سلة طلبات ذكية وحساب فوري للإجمالي",
         p3Feat3: "مستعرض منيو ورقي (10 صفحات كاملة)",
         p3Feat4: "ربط بالخط الساخن والواتساب والفروع",
+        viewLiveDemoRestaurant: "تصفح منيو المطعم التجريبي",
         orderRestaurantSite: "اطلب موقعاً لمطعمك",
         // Project 4: Festival Pastry
         p4Category: "منصة عرض وقائمة حلويات (F&B Platform)",
@@ -1852,13 +1874,16 @@
         pVarandaFeat3: "Live Photo Gallery & Outdoor Terrace",
         pVarandaFeat4: "Walk-in Access & Direct Shoubra Map",
         orderWorkspaceSite: "Order Workspace & Cafe Website",
-        // Project 3: Elmo7taref Restaurant
+        // Project 3: Elmo7taref Restaurant (Demo Concept)
         p3Category: "Restaurant, Grill & Cloud Menu Platform",
-        p3Desc: "The official digital platform for a renowned Egyptian grill & street food landmark in Shoubra. Engineered to handle high-traffic volume with a categorized dynamic menu, high-resolution 10-page paper menu viewer, smart cart with direct WhatsApp checkout, delivery hotlines, and interactive Google Maps branch locations.",
+        p3DemoBadge: "Interactive Demo Concept",
+        p3DemoNotice: "Interactive Demo Project: A live demonstration prototype we engineered to show restaurant owners and F&B brands how we architect lightning-fast food platforms, featuring digital menus, instant WhatsApp carts, and paper menu viewers to experience our craftsmanship firsthand.",
+        p3Desc: "A full-scale food & beverage platform developed as a live concept showcase of our restaurant tech engineering. Features an interactive categorized menu, high-resolution 10-page paper menu viewer, smart cart with direct WhatsApp checkout, delivery hotlines, and interactive Google Maps branch locations.",
         p3Feat1: "Interactive Digital Menu with Live Filters",
         p3Feat2: "Smart Shopping Bag & Instant WhatsApp Checkout",
         p3Feat3: "High-Res 10-Page Paper Menu Viewer",
         p3Feat4: "Direct Delivery Hotlines & Branch Locator",
+        viewLiveDemoRestaurant: "Explore Live Demo Menu",
         orderRestaurantSite: "Order Restaurant & Menu Website",
         // Project 4: Festival Pastry
         p4Category: "Brand & Digital Menu Platform",
